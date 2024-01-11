@@ -1,26 +1,24 @@
 # DevOps Real Time Projects
 
-> Agenda
-
 # DevOps Project Lists
 
-- AWS
+# AWS
     - Deploy Sample Application On EC2 By Using Jenkins
     - Deploy 2-Tier Architecture
     - Deploy 3-Tier Architecture
     - Deploy Static Website On Secured S3 Bucket With CloudFront
     - Deploy Lambda Function With API Gateway and RDS
 
-- Docker
+# Docker
     - Coming Soon
 
-- Kubernetes
+# Kubernetes
     - Coming Soon
 
-- Terraform
+# Terraform
     - Coming Soon
 
-- Monitoring
+# Monitoring
     - Coming Soon
 
 # CICD Projects
