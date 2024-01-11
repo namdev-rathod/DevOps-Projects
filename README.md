@@ -1,7 +1,5 @@
 # DevOps Real Time Projects
 
-# DevOps Project Lists
-
 # AWS
     - Deploy Sample Application On EC2 By Using Jenkins
     - Deploy 2-Tier Architecture
