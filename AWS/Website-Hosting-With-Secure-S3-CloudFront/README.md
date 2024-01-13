@@ -30,11 +30,14 @@ export class WebsiteHostingWithS3CloudfrontStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
+
+    # Create an S3 bucket for assets
       const assetBucket = new s3.Bucket(this, 'AssetBucket', {
         bucketName: 'test-s3-bucket-hosting-cdn',
         removalPolicy: cdk.RemovalPolicy.DESTROY,
       });
 
+    # Deploy files to the S3 bucket during deployment
       new s3deploy.BucketDeployment(this, 'DeployFiles', {
       sources: [s3deploy.Source.asset(path.join(__dirname, 'data'))], // 'data' is a folder containing your files
       destinationBucket: assetBucket,
@@ -43,7 +46,7 @@ export class WebsiteHostingWithS3CloudfrontStack extends cdk.Stack {
     # Get existing ACM certificate from N. Virginia (us-east-1) region
         const certificate = acm.Certificate.fromCertificateArn(this, 'ExistingCertificate', 'arn:aws:acm:us-east-1:666930281169:certificate/48263aba-1617-451c-9fc2-0386a3023621');
 
-    Create a CloudFront distribution with S3 origin
+   # Create a CloudFront distribution with S3 origin
       const distribution = new cloudfront.Distribution(this, 'Distribution', {
         defaultBehavior: { origin: new origins.S3Origin(assetBucket)
       },
@@ -51,21 +54,21 @@ export class WebsiteHostingWithS3CloudfrontStack extends cdk.Stack {
         domainNames: ['app.awsguruji.net']
       });
 
-    // Fetch existing Route 53 hosted zone
+    # Fetch existing Route 53 hosted zone
       const hostedZone = route53.HostedZone.fromLookup(this, 'ExistingHostedZone', {
         domainName: 'awsguruji.net', // Replace with your domain name
       });
 
-    // Create DNS entry in Route 53
+    # Create DNS entry in Route 53
       new route53.ARecord(this, 'AppRecord', {
         zone: hostedZone,
         recordName: 'app',
         target: route53.RecordTarget.fromAlias(new route53Targets.CloudFrontTarget(distribution)),
       });
-
-
   }
 
 }
 
 ``
+
+Note: Change the values whereever possible based on your environments.
