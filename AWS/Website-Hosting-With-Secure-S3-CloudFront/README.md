@@ -10,6 +10,9 @@
  - ACM - SSl Certificate In N.Virginia
  - Give additional domain name in CloudFront
  - CDK Code - Typescript
+ - Architecture Diagram
+
+ ![Secured-S3-CloudFront](image.png)
 
  # CDK Code To Create Above mentioned all the required teck stack
  >  **If you don't know CDK - Follow this playlist** https://www.youtube.com/playlist?list=PLqdbsgoG9hwWYlNvMJmt6rLQXaM6MoEAh
