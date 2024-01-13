@@ -7,7 +7,7 @@
 # To achieve this requirement we need below tech stack
  - Secure S3 Bucket
  - CloudFront
- - ACM - SSl Certificate In N.Virginia
+ - ACM - SSL Certificate In N.Virginia
  - Give additional domain name in CloudFront
  - CDK Code - Typescript
  - Architecture Diagram
