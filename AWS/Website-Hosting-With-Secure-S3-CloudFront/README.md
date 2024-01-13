@@ -14,6 +14,8 @@
  # CDK Code To Create Above mentioned all the required teck stack
  >  **If you don't know CDK - Follow this playlist** https://www.youtube.com/playlist?list=PLqdbsgoG9hwWYlNvMJmt6rLQXaM6MoEAh
 
+ - Find below CDK Code For This Setup
+
 ```
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
