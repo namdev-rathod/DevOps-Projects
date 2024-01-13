@@ -14,8 +14,7 @@
  # CDK Code To Create Above mentioned all the required teck stack
  >  **If you don't know CDK - Follow this playlist** https://www.youtube.com/playlist?list=PLqdbsgoG9hwWYlNvMJmt6rLQXaM6MoEAh
 
-``
-
+```
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as s3 from 'aws-cdk-lib/aws-s3';
@@ -70,6 +69,6 @@ export class WebsiteHostingWithS3CloudfrontStack extends cdk.Stack {
 
 }
 
-``
+```
 
 Note: Change the values whereever possible based on your environments.
