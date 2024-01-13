@@ -14,7 +14,7 @@
 
  ![Secured-S3-CloudFront](image.png)
 
- # CDK Code To Create Above mentioned all the required teck stack
+ # CDK Code To Create Tech Stack
  >  **If you don't know CDK - Follow this playlist** https://www.youtube.com/playlist?list=PLqdbsgoG9hwWYlNvMJmt6rLQXaM6MoEAh
 
  - Find below CDK Code For This Setup
@@ -76,4 +76,5 @@ export class WebsiteHostingWithS3CloudfrontStack extends cdk.Stack {
 
 ```
 
+GitHub Repo: https://github.com/namdev-rathod/website-hosting-with-s3-cloudfront.git
 Note: Change the values whereever possible based on your environments.
