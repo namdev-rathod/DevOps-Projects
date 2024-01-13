@@ -1,9 +1,13 @@
 # Host Simple Website Using Secured S3 Bucket & CloudFront
 
 > Requirements
+
 > Host sample application using S3 bucket and Cloudfront.
+
 > Make sure S3 bucket object should not be a public and it should only accessible via Cloudfront
+
 > Give Additional Domain Name To CloudFront
+
 > Configure Route53 DNS Entry 
 
 # How To Achieve These Requirements?
