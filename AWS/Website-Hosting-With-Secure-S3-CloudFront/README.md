@@ -4,7 +4,7 @@
 > Host sample application using S3 bucket and Cloudfront.
 > Make sure S3 bucket object should not be public and it should only accessible via Cloudfront
 
-# To achieve this requirement we need below tech stack
+# How To Achieve These Requirements?
  - Secure S3 Bucket
  - CloudFront
  - ACM - SSL Certificate In N.Virginia
