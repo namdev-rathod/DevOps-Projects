@@ -4,7 +4,7 @@
   - Host Simple Website Using EC2 Instance With Load Balancer & CloudFront
   - Create Application Load Balancer With SSL Certificate
   - Create CloudFront For Load Balancer
-  - Make a DNS Entry In Route53 For web.awsguruji.net
+  - Make a DNS Entry In Route53 For app.awsguruji.net
   - Configure Additional Domain Name With SSL
   - Application URL Should Be https://app.awsguruji.net
 
