@@ -17,6 +17,8 @@
   - CDK Code - Typescript
   - Architecture Diagram
 
+  ![Architecture Diagram](Website-EC2-LB-CloudFront.drawio.png)
+
 
  # CDK Code To Create Tech Stack
  >  **If you don't know CDK - Follow this playlist** https://www.youtube.com/playlist?list=PLqdbsgoG9hwWYlNvMJmt6rLQXaM6MoEAh
