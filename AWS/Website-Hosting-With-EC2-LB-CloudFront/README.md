@@ -6,7 +6,7 @@
   - Create CloudFront For Load Balancer
   - Make a DNS Entry In Route53 For web.awsguruji.net
   - Configure Additional Domain Name With SSL
-  - Application URL Should Be https://web.awsguruji.net
+  - Application URL Should Be https://app.awsguruji.net
 
 # How To Achieve These Requirements?
   - Create EC2 Instance With 8 GB Storage, Linux OS With Nginx Web Server
