@@ -1,5 +1,9 @@
 # How To Setup Terraform Project On Local Windows Machine
-- Download Terraform From https://developer.hashicorp.com/terraform/install Its depend on OS type
+- Pre-requisites
+    - Install AWS CLI - https://awscli.amazonaws.com/AWSCLIV2.msi
+    - Install Terraform - https://developer.hashicorp.com/terraform/install Its depend on OS type
+    - AWS IAM User Credentials
+    
 - For Linux
 
 ```
