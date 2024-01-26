@@ -1,5 +1,9 @@
 # Create First EC2 By Using Terraform
 
+- DevOps Project - 3 Overview
+
+![Project Overview](image-1.png)
+
 - Architecture Diagram For EC2, Load Balancer & Route53
 
 ![Arch](image.png)
