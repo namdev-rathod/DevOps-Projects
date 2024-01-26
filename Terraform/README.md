@@ -21,4 +21,6 @@ brew install hashicorp/tap/terraform
 - Copy terraform folder into C:\Program Files\terraform
 - It should looks like below
 ![Terraform](image.png)
-- 
+- Open Control Panel
+- Click On System
+![System](image-1.png)
