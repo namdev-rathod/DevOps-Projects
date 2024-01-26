@@ -44,7 +44,11 @@ brew install hashicorp/tap/terraform
 ![tfpath](image-5.png)
 
 - Click Ok --> Ok --> Ok
-- Check terraform version with command #terraform -version
+- Check terraform version with command 
+
+```
+terraform -version
+```
 
 ![version](image-6.png)
 
