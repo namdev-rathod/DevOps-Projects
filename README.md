@@ -17,7 +17,7 @@
     - Coming Soon
 
 # Terraform
-    - Coming Soon
+    - https://github.com/namdev-rathod/DevOps-Projects/tree/main/Terraform
 
 # Monitoring
     - Coming Soon

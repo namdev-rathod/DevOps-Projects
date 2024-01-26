@@ -1,37 +1,18 @@
-# DevOps Real Time Projects
+# How To Setup Terraform Project On Local Windows Machine
+- Download Terraform From https://developer.hashicorp.com/terraform/install Its depend on OS type
+- For Windows https://releases.hashicorp.com/terraform/1.7.1/terraform_1.7.1_windows_amd64.zip
+- For Linux
 
-# AWS
-    - Deploy Static Website On Secured S3 Bucket With CloudFront
-    - Website Hosting On EC2 With Load Balancer & CloudFront
-    - Deploy Sample Application On EC2 By Using Jenkins
-    - Deploy Lambda Function With API Gateway and RDS
-    - Deploy 2-Tier Architecture
-    - Deploy 3-Tier Architecture
-    
-    
+```
+sudo yum install -y yum-utils
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+sudo yum -y install terraform
 
-# Docker
-    - Coming Soon
+```
+- For Mac
 
-# Kubernetes
-    - Coming Soon
+```
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
 
-# Terraform
-    - Coming Soon
-
-# Monitoring
-    - Coming Soon
-
-# CICD Projects
-
-- Jenkins
-    - Free Style Pipeline
-    - Declarative Pipeline
-
-- GitHub Actions
-    - Coming Soon
-
-- GitLab CI
-    - Coming Soon
-
-
+```
