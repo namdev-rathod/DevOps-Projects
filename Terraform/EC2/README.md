@@ -1,6 +1,6 @@
 # Create First EC2 By Using Terraform
 
-# Create simple EC2 instance with user data script to install Nginx web server
+- Create simple EC2 instance with user data script to install Nginx web server
 
 ```
 provider "aws" {
