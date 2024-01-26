@@ -35,3 +35,16 @@ brew install hashicorp/tap/terraform
 
 ![Environment](image-3.png)
 
+- Click On Path & Select Edit
+
+![path](image-4.png)
+
+- Clink On New & Add Terraform Path C:\Program Files\terraform
+
+![tfpath](image-5.png)
+
+- Click Ok --> Ok --> Ok
+- Check terraform version with command #terraform -version
+
+![version](image-6.png)
+
