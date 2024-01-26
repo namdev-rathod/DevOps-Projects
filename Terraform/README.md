@@ -56,3 +56,8 @@ terraform -version
 
 ![version](image-6.png)
 
+- For AWS Version
+```
+aws --version
+```
+![AWS Version](image-7.png)
