@@ -21,7 +21,7 @@ brew install hashicorp/tap/terraform
 ```
 
 - For Windows https://releases.hashicorp.com/terraform/1.7.1/terraform_1.7.1_windows_amd64.zip
-- extract it on download folder
+- Extract it on download folder
 - Copy terraform folder into C:\Program Files\terraform
 - It should looks like below
 ![Terraform](image.png)

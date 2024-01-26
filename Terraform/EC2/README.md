@@ -1,6 +1,9 @@
 # Create First EC2 By Using Terraform
 
 - Create simple EC2 instance with user data script to install Nginx web server
+- Architecture Diagram For EC2, Load Balancer & Route53
+
+![Arch](image.png)
 
 ```
 provider "aws" {
