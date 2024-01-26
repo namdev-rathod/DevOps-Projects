@@ -33,10 +33,15 @@ resource "aws_instance" "terraform_example_instance" {
 
 ```
 
-- Create EC2 Instance With Load Balancer & Route53 DNS Entry
-- Domain name should be https://web.awsguruji.net
+# Create EC2 Instance With Load Balancer, Route53 & SSL Certificate
+- Create EC2 instance with t3.micro
 - Install Nginx Web Server By Using User Data Script
+- Create Load Balancer with Target Group
+- Register EC2 Instance With Target Group
+- Attach Target Group To Load Balancer
 - Attach SSL Certificate On Load Balancer
+- Domain name should be https://web.awsguruji.net
+
 
 ```
 provider "aws" {
