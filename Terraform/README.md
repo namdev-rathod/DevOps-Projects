@@ -1,10 +1,10 @@
 # How To Setup Terraform Project On Local Windows Machine
-- Pre-requisites
+- **Pre-requisites**
     - Install AWS CLI - https://awscli.amazonaws.com/AWSCLIV2.msi
     - Install Terraform - https://developer.hashicorp.com/terraform/install Its depend on OS type
     - AWS IAM User Credentials
-    
-- For Linux
+
+- **For Linux**
 
 ```
 sudo yum install -y yum-utils
@@ -12,7 +12,7 @@ sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashi
 sudo yum -y install terraform
 
 ```
-- For Mac
+- **For Mac**
 
 ```
 brew tap hashicorp/tap
