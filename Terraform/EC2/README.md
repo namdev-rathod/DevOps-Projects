@@ -1,9 +1,10 @@
 # Create First EC2 By Using Terraform
 
-- Create simple EC2 instance with user data script to install Nginx web server
 - Architecture Diagram For EC2, Load Balancer & Route53
 
 ![Arch](image.png)
+
+- Create Simple EC2 Instance & Install Nginx Web Server By Using User Data Script.
 
 ```
 provider "aws" {
@@ -37,6 +38,7 @@ resource "aws_instance" "terraform_example_instance" {
 ```
 
 # Create EC2 Instance With Load Balancer, Route53 & SSL Certificate
+
 - Create EC2 instance with t3.micro
 - Install Nginx Web Server By Using User Data Script
 - Create Load Balancer with Target Group
