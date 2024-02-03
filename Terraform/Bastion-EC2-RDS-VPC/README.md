@@ -249,3 +249,13 @@ resource "aws_security_group" "my_ec2_security_group" {
 
 
 ```
+
+- **Run Terraform Commands To Create Resources**
+
+```
+
+terraform init
+terraform plan
+terraform apply
+
+```
