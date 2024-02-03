@@ -33,7 +33,7 @@ provider "aws" {
 }
 
 resource "aws_vpc" "my_vpc" {
-  cidr_block = "10.0.0.0/16"
+  cidr_block = "10.0.0.0/16" #Replace VPC CIDR Block With Project Specific IP range
   enable_dns_support = true
   enable_dns_hostnames = true
   tags = {
@@ -44,7 +44,7 @@ resource "aws_vpc" "my_vpc" {
 resource "aws_subnet" "public_subnet" {
   vpc_id                  = aws_vpc.my_vpc.id
   cidr_block              = "10.0.1.0/24"
-  availability_zone       = "ap-south-1a"
+  availability_zone       = "ap-south-1a" # Replace AZ as per your requirements
   map_public_ip_on_launch = true
   tags = {
     Name = "public-subnet"
@@ -53,8 +53,8 @@ resource "aws_subnet" "public_subnet" {
 
 resource "aws_subnet" "private_subnet" {
   vpc_id                  = aws_vpc.my_vpc.id
-  cidr_block              = "10.0.2.0/24"
-  availability_zone       = "ap-south-1b"
+  cidr_block              = "10.0.2.0/24" 
+  availability_zone       = "ap-south-1b" # Replace AZ as per your requirements
   tags = {
     Name = "private-subnet"
   }
@@ -107,7 +107,7 @@ resource "aws_db_subnet_group" "my_db_subnet_group" {
 
 variable "key_pair_name" {
   type    = string
-  default = "AWS-EC2-Test-Server-Key"
+  default = "AWS-EC2-Test-Server-Key" # Replace key pair 
 }
 
 # Create EC2 instance
@@ -127,7 +127,7 @@ resource "aws_instance" "terraform_ec2_instance" {
               EOF
 
   tags = {
-    Name = "Bastion-EC2-Public"
+    Name = "Bastion-EC2-Public" # Replace EC2 name as per your choice
   }
 }
 
