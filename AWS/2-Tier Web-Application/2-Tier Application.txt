@@ -1,0 +1,161 @@
+
+Problem Statement:
+
+1. Create web server with database in AWS Cloud.
+2. Make sure database should be secure and high available.
+3. Web server traffice should be encrypted or secure
+4. Connectivity between app and db should be private
+5. Web and DB should be in secured VPC.
+6. Database password should stored in secured manner.
+7. Add monitoring solution for app and db
+8. Make sure database backup is there at least for last 1 week.
+
+
+Tech stack:
+
+1. AWS EC2
+2. AWS RDS - MySQL
+3. AWS SSL
+4. AWS Load Balancer
+5. AWS VPC
+6. AWS Route53
+7. AWS SecretManager
+8. AWS CloudWatch
+
+
+Architecture Diagram
+
+
+# Pre-requisites
+----------------
+
+1. Web
+	- OS: Ubuntu 24.04 
+	- Instance Type: t3.medium
+	- SSH: Root Access
+	- Web Server: Nginx
+	
+2. Database
+	- RDS - MySQL
+	- SecretManager
+	
+
+# Steb By Step Process
+----------------------
+
+1. Create VPC
+2. EC2
+3. RDS
+4. Security Inbound Rule
+5. Testing
+
+Testing:
+
+1. Check connectivity between App & DB
+2. Make sure web server is working fine and able to connect database
+---------------------------------------------------
+
+
+1. First Create VPC with private and public subnet
+2. Create EC2 instance with nginx and php
+3. Create RDS and store credentials in secret manager
+4. Connect database and create sample db and tables with records
+5. try to connect from linux ec2 for testing
+
+
+# On EC2 Ubuntu
+
+# Update the system first
+
+apt-get update
+apt-get upgrade -y
+
+# Check apache2 default service running or not. If running then stop and disabled it
+
+
+# Install the required packages
+
+apt install nginx php php-fpm php-mysql
+
+# Check apache2 service status and stop it if its running.
+systemctl status apache2
+systemctl stop apache2
+systemctl disable apache2
+
+# Check status and start the nginx service
+
+systemctl status nginx
+systemctl start nginx
+systemctl enable nginx
+
+# Check php version
+
+php -v
+
+
+## Create RDS MySQL Instance.
+
+# Check MySQL connection from EC2 to RDS
+
+## Open required mysql port for web server private ip in database security group inbound rule.
+
+telnet demo-database-instance-1.cvpc1scbkvq8.ap-south-1.rds.amazonaws.com 3306
+
+
+# Copy index.php code in var/www/html/
+
+cd /var/www/html/
+vim index.php
+<add sample index.php code here>
+
+:wq
+
+# Change the configuration to run php file
+
+vim /etc/nginx/sites-available/default
+
+# Add index.php to the list if you are using PHP
+index index.php index.html index.htm;
+
+# Enable this fastcgi php scipt
+
+         location ~ \.php$ {
+               include snippets/fastcgi-php.conf;
+             # With php-fpm (or other unix sockets):
+               fastcgi_pass unix:/run/php/php8.3-fpm.sock;
+        }
+
+:wq
+
+# Check the nginx syntax configuration file
+
+nginx -t
+
+# restart nginx & php fpm service
+
+systemctl restart nginx
+systemctl status nginx
+systemctl restart php8.3-fpm
+systemctl status php8.3-fpm
+
+
+## On RDS
+
+1. Connect MySQL database and execute below query to create sample database and records
+2. First connect RDS MySQL database by using client MySQL Workbench 
+
+CREATE DATABASE sample_db;
+USE sample_db;	
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+);
+INSERT INTO users (name) VALUES ('Namdev Rathod'), ('DevOps Engineer');
+INSERT INTO users (name) VALUES ('Demo User'), ('Network Engineer');
+INSERT INTO users (name) VALUES ('Example User'), ('SRE Engineer');
+
+
+
+# visit link http://server-ip/index.php  or http://server-ip
+
+
