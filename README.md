@@ -89,3 +89,18 @@
 ### 🗣️ **Module-11: Interview Mastery**  
 1️⃣ **Interview Preparation** 🎯  
 2️⃣ **Mock Interviews** 🗣️  
+
+---
+
+### 🚀 **DevOps Project Batch-2 Details**  
+
+📱 **WhatsApp**: +91 7276 12 1983  
+📅 **Start Date**: 18th January 2025  
+⏰ **Time**: To Be Decided  
+🕒 **Duration**: 2.5 Months (Weekend Only)
+🌐 **Language**: English
+💰 **Fees**: ₹15,000/-  
+
+📝 **Note**: Registration is **mandatory** to secure your seat. Seats are limited, so book yours now!  
+
+
