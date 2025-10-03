@@ -13,7 +13,7 @@ Welcome to the **DevOps Real-Time Learning Model** – learn by **Projects, Trou
 ## 📅 Batch Details  
 
 - 🔥 **Starting From**: 1st Week of November 2025 (Post-Diwali Special)  
-- 💻 **Mode**: Online (Zoom/Meet)  
+- 💻 **Mode**: Online (MS Teams)  
 - 🗓️ **Schedule**: Saturday & Sunday  
 - ⏰ **Time**: 8:00 AM – 10:00 AM IST  
 - 📅 **Duration**: 2 Months  
