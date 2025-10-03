@@ -10,6 +10,21 @@ Welcome to the **DevOps Real-Time Learning Model** – learn by **Projects, Trou
 
 ---
 
+## 📅 Batch Details  
+
+- 🔥 **Starting From**: 1st Week of November 2025 (Post-Diwali Special)  
+- 💻 **Mode**: Online (Zoom/Meet)  
+- 🗓️ **Schedule**: Saturday & Sunday  
+- ⏰ **Time**: 8:00 AM – 10:00 AM IST  
+- 📅 **Duration**: 2 Months  
+- 💰 **Fees**: ₹10,000  
+- 📝 **Advance Registration (Mandatory)**: ₹1,000  
+- 📱 **WhatsApp**: 7276 12 1983  
+
+⚡ *Seats are Limited – Secure your Spot Today!*  
+
+---
+
 ## 📌 Program Modules  
 
 ### 🔹 Module-1: DevOps Projects (10 Real-Time Projects)  
